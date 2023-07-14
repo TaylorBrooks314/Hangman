@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="brown">
+        <h1 id="heading">Hangman</h1>
+        <button class="green levelBtns">Level 1</button>
+        <button class="green levelBtns">Level 2</button>
+        <button class="green levelBtns">Level 3</button>
+    </header>
+    <main class="green">
+        <!--"left-top" -->
+        <div id="playerBox1" class="playerScoreBox"> 
+            <h1>Player: 
+                <p id="player1-score" class="brown"></p>
+                <p id="player1-message" class="brown">Instructions</p>
+            </h1>
+        </div>
+        <div id="heading2">
+            <p id="category">Category:</p>
+        </div>
+        <div id="pictures">
+            <img src="assets/images/blackLeftArmSF.jpg" alt="left-arm" id="left-arm">
+            <img src="assets/images/blackRightArmSF.jpg" alt="right-arm" id="right-arm">
+            <img src="assets/images/blackHeadSF.jpg" alt="head" id="head">
+            <img src="assets/images/blackLeftLegSF.jpg" alt="left-leg" id="left-leg">
+            <img src="assets/images/blackRightLegSF.jpg" alt="right-leg" id="right-leg">
+            <img src="assets/images/blackBodySF.jpg" alt="body" id="body">
+        </div>
+        <div id="wordBoxes"></div>
+        
+        <div id="letters"></div>
+
+
+    </main>
+
+</body>
+</html>
