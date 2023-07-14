@@ -87,9 +87,10 @@ function play(word,wordDivArr){
                         console.log(document.getElementsByClassName(`${word[w]}`))
                         let multiples= document.getElementsByClassName(`${word[w]}`)
                         // populates correct boxes and accounts for multiple of the same letters
+                        wordDivArr.push(multiples);
                         for (m of multiples){
                         m.innerHTML= evt.target.innerHTML;
-                        wordDivArr.push(m);
+                        
                         console.log(wordDivArr)
                         if(wordDivArr.length===chosenWord.length){
                                 alert("YOU WIN!!!")
